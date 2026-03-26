@@ -1,2 +1,7 @@
-# machine-learning-assignment
-d
+# Explainable AI with SHAP Values
+## Opening the Black Box of Machine Learning Models
+Machine learning models such as Random Forests achieve high accuracy but often lack transparency, making it difficult to understand how decisions are made. This “black-box” problem is especially critical in high-stakes fields like healthcare and finance, where explanations are necessary for trust, regulation, and decision-making. The report introduces SHAP (SHapley Additive exPlanations), a method based on game theory that assigns each feature a fair contribution to a model’s prediction, enabling clearer interpretation without altering the model itself. 
+
+SHAP works by using Shapley values to quantify the impact of each feature, ensuring properties such as efficiency, consistency, and fairness in explanations. The study applies SHAP to a Random Forest model trained on the Wisconsin Breast Cancer dataset, achieving high predictive performance. SHAP provides both global interpretability, through feature importance and beeswarm plots showing overall model behaviour, and local interpretability, using waterfall plots to explain individual predictions by showing how each feature influences the final outcome. 
+
+Overall, SHAP is a powerful and reliable tool for improving transparency in machine learning models, making it suitable for auditing, fairness analysis, and debugging. However, it has limitations, such as difficulty handling highly correlated features and its inability to determine causal relationships or eliminate bias. Ethical concerns, including the risk of “explanation washing,” highlight the need for human judgement alongside SHAP. Therefore, while SHAP enhances interpretability, it should be used responsibly in combination with domain expertise. 
